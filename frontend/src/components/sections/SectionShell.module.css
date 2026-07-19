@@ -1,0 +1,26 @@
+.section {
+  padding: var(--space-16) 0;
+  border-top: 1px solid var(--surface-border);
+  background: color-mix(in srgb, var(--bg) 95%, transparent);
+  position: relative;
+}
+.transparent {
+  background: color-mix(in srgb, var(--bg) 80%, transparent);
+  border-top-color: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+
+}
+
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--accent);
+  display: block;
+  margin-bottom: var(--space-2);
+}
+
+.title {
+  font-size: var(--fs-2xl);
+  margin-bottom: var(--space-8);
+}

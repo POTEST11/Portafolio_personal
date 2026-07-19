@@ -1,0 +1,101 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: var(--fs-sm);
+  color: var(--ink-muted);
+}
+
+.required {
+  color: var(--accent);
+}
+
+.field input,
+.field textarea {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.imageField {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.preview {
+  max-width: 200px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--surface-border);
+}
+
+.uploading {
+  font-size: var(--fs-xs);
+  color: var(--accent);
+}
+
+.uploadError {
+  font-size: var(--fs-xs);
+  color: crimson;
+}
+
+.iconList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.iconRow {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.iconPreview {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+}
+
+.iconLabelInput {
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  padding: var(--space-2);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--ink);
+
+}
+
+.remove {
+  border: none;
+  background: none;
+  color: var(--ink-faint);
+  font-size: var(--fs-sm);
+}
+
+.remove:hover {
+  color: crimson;
+}
+
+.addButton {
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  padding: var(--space-2) var(--space-3);
+  border: 1px dashed var(--surface-border);
+  border-radius: var(--radius-sm);
+  background: none;
+  color: var(--ink-muted);
+}
+
+.addButton:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}

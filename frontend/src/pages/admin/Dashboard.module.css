@@ -1,0 +1,126 @@
+.page {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-8);
+}
+
+.header h1 {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xl);
+  color: var(--accent);
+}
+
+.headerActions {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.newButton {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  text-decoration: none;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: var(--surface);
+}
+
+.logout {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--surface-border);
+  background: var(--surface);
+  color: var(--ink-muted);
+}
+
+.status {
+  padding: var(--space-8);
+  text-align: center;
+  color: var(--ink-muted);
+}
+
+.error {
+  color: crimson;
+  margin-bottom: var(--space-4);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.slug {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--ink-faint);
+}
+
+.title {
+  font-weight: 600;
+}
+
+.meta {
+  font-size: var(--fs-sm);
+  color: var(--ink-muted);
+}
+
+.rowActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.toggle {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  padding: var(--space-1) var(--space-3);
+  border-radius: 999px;
+  border: 1px solid var(--surface-border);
+  background: var(--bg);
+  color: var(--ink-muted);
+}
+
+.editLink {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--accent);
+  text-decoration: none;
+}
+.deleteButton {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--ink-faint);
+  background: none;
+  border: none;
+  padding: var(--space-1);
+}
+
+.deleteButton:hover {
+  color: crimson;
+}

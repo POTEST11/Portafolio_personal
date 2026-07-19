@@ -1,0 +1,94 @@
+.page {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.heading {
+  font-family: var(--font-mono);
+  font-size: var(--fs-lg);
+  color: var(--accent);
+  margin-bottom: var(--space-6);
+}
+
+.status {
+  padding: var(--space-8);
+  text-align: center;
+  color: var(--ink-muted);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: var(--fs-sm);
+  color: var(--ink-muted);
+}
+
+.field input,
+.field select {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.row {
+  display: flex;
+  gap: var(--space-4);
+  align-items: end;
+}
+
+.checkboxField {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-sm);
+  color: var(--ink-muted);
+  padding-bottom: var(--space-2);
+}
+
+.fieldset {
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+.fieldset legend {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--ink-muted);
+  padding: 0 var(--space-2);
+}
+
+.error {
+  color: crimson;
+  font-size: var(--fs-sm);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit {
+  padding: var(--space-3) var(--space-6);
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: var(--surface);
+  font-weight: 600;
+}
+
+.submit:disabled {
+  opacity: 0.6;
+}

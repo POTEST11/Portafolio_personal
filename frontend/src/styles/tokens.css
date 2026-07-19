@@ -1,0 +1,72 @@
+:root {
+  /* ---- Color: light (default) ---- */
+  --bg: #fafaf8;
+  --surface: #ffffff;
+  --surface-border: #e7e5e0;
+  --ink: #14151a;
+  --ink-muted: #655b6b;
+  --ink-faint: #a09aa5;
+  --accent: #722f8f;
+  --accent-strong: #50226b;
+  --accent-soft: #e6dcef;
+  --shadow: 0 1px 2px rgba(20, 21, 26, 0.04), 0 8px 24px rgba(20, 21, 26, 0.06);
+
+  /* ---- Type ---- */
+  --font-display: "Instrument Sans", "Segoe UI", sans-serif;
+  --font-body: "Inter", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2rem;
+  --fs-3xl: 2.75rem;
+  --fs-4xl: 3.75rem;
+
+  --lh-tight: 1.15;
+  --lh-normal: 1.55;
+
+  /* ---- Spacing (4px base) ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+
+  /* ---- Layout ---- */
+  --content-width: 72rem;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 160ms;
+  --duration-base: 420ms;
+}
+
+[data-theme="dark"] {
+  --bg: #0f1214;
+  --surface: #171b1e;
+  --surface-border: #262b2f;
+  --ink: #eae7e9;
+  --ink-muted: #9e9399;
+  --ink-faint: #695f65;
+  --accent: #8c086fff;
+  --accent-strong: #d47fc9;
+  --accent-soft: #331221;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+  }
+}
