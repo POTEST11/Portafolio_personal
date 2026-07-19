@@ -11,7 +11,7 @@ const API_URL = import.meta.env.VITE_API_URL;
 
 export function AdminLogin() {
 
-  const { theme, toggleTheme } = useTheme();
+  const theme = useTheme().theme;
 
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
