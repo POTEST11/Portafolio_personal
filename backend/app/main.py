@@ -15,6 +15,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "https://pablopotes.vercel.app",
+        "https://portafolio-personal-.*\.vercel\.app",
     ],
     allow_origin_regex=r"https://portafolio-personal-.*\.vercel\.app",
     allow_credentials=True,
